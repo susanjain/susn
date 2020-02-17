@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to sort the array.</p>
+
+<input type="text" id="userinput1" />
+
+<input type="text" id="userinput2" />
+
+<input type="text" id="userinput3" />
+
+<input type="text" id="userinput4" />
+
+<input type ="button" onclick="addTo()" value="Sort" />
+
+
+<script>
+ 
+var myarr = [];
+ 
+function addTo() 
+{
+ myarr.push(document.getElementById("userinput1").value);
+ myarr.push(document.getElementById("userinput2").value);
+ myarr.push(document.getElementById("userinput3").value);
+ myarr.push(document.getElementById("userinput4").value);
+
+myarr.sort();
+document.write(myarr);
+}
+</script>
+</body>
+</html>
+

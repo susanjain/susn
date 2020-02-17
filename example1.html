@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Find length of a string</title>
+</head>
+<body>
+<p id="demo"></p>
+<input type="text" id="stringinput" placeholder="Enter the String">
+
+<button type="button" onclick ="length()">Find length</button>
+
+<script>
+
+function length()
+{
+var str = document.getElementById("stringinput").value;
+var n=str.length;
+document.getElementById("demo").innerHTML="The length of string is: " +n;
+}
+
+</script>
+</body>
+</html>
